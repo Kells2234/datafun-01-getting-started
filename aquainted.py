@@ -22,7 +22,7 @@ print()
 print("Greetings!")
 
 # get input from the user
-name = input("What is your name?: ")
+name = input("What is your name?: Kelly")
 
 # use what you got
 print("Hello " + name.capitalize() + "!")
