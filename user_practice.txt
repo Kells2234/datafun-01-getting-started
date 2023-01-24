@@ -19,3 +19,180 @@ hello
 >>> print( min (a, b))
 3
 >>> 
+(base) C:\Users\Kelly>python
+Python 3.10.8 | packaged by conda-forge | (main, Nov 24 2022, 14:07:00) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 45+72
+117
+>>>
+>>> x = 7
+>>> y = 3
+>>> x + y
+10
+>>> total = x + y
+>>> total
+10
+>>>
+>>> type(x)
+<class 'int'>
+>>> type(10.5)
+<class 'float'>
+>>>
+>>> 7*4
+28
+>>> 2**10
+1024
+>>> 9**(1/2)
+3.0
+>>> 7/4
+1.75
+>>> 7//4
+1
+>>> 3//5
+0
+>>> 14//7
+2
+>>> -13/4
+-3.25
+>>> -13//4
+-4
+>>> 123/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> z+7
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>> 17%5
+2
+>>> 7.5%3.5
+0.5
+>>>
+>>> 10*5+3
+53
+>>> 10*(5+3)
+80
+>>> y =a*x**2+b*x+c
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> y = (a*(x**2))+(b*x)+c
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>>
+>>> print("Welcome to Python!")
+Welcome to Python!
+>>> print('Welcome, 'to', 'Python!')
+  File "<stdin>", line 1
+    print('Welcome, 'to', 'Python!')
+          ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print('Welcome', 'to', 'Python!')
+Welcome to Python!
+>>> print(Welcome\nto\n\nPython!')
+  File "<stdin>", line 1
+    print(Welcome\nto\n\nPython!')
+                  ^
+SyntaxError: unexpected character after line continuation character
+>>> print('Welcome\nto\nPython!')
+Welcome
+to
+Python!
+>>> print('this is a longer string,, so we\
+... split it over two lines')
+this is a longer string,, so wesplit it over two lines
+>>> print('Sum is', 7+3)
+Sum is 10
+>>>
+>>> print('Display "hi" in quotes')
+Display "hi" in quotes
+>>> printt('Display 'hi' in quotes')
+  File "<stdin>", line 1
+    printt('Display 'hi' in quotes')
+           ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print('Display \ 'hi\' in quotes')
+  File "<stdin>", line 1
+    print('Display \ 'hi\' in quotes')
+                         ^
+SyntaxError: unexpected character after line continuation character
+>>> print('Display\ 'hi\' in quotes')
+  File "<stdin>", line 1
+    print('Display\ 'hi\' in quotes')
+                        ^
+SyntaxError: unexpected character after line continuation character
+>>> print("Display the name O'Brien")
+Display the name O'Brien
+>>> print("Display\"hi\" in quotes")
+Display"hi" in quotes
+>>> print"""Display "hi" and 'bye in quotes""")
+  File "<stdin>", line 1
+    print"""Display "hi" and 'bye in quotes""")
+                                              ^
+SyntaxError: unmatched ')'
+>>> print"""Display "hi" and 'bye' in quotes""")
+  File "<stdin>", line 1
+    print"""Display "hi" and 'bye' in quotes""")
+                                               ^
+SyntaxError: unmatched ')'
+>>> print("""Display "hi" and 'bye' in quotes""")
+Display "hi" and 'bye' in quotes
+>>>
+>>> name = input("What's your name? ")
+What's your name? Paul
+>>> name
+'Paul'
+>>> print(name)
+Paul
+>>> name = input("What's your name? ')
+  File "<stdin>", line 1
+    name = input("What's your name? ')
+                 ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> name = input("What's your name? ")
+What's your name? 'Paul'
+>>> name
+"'Paul'"
+>>> print(name)
+'Paul'
+>>>
+>>> value1 = input('Enter first number: ')
+Enter first number: 7
+>>> value2 = input(Enter second number: ')
+  File "<stdin>", line 1
+    value2 = input(Enter second number: ')
+                   ^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> value2 = input('Entersecond number: ')
+Entersecond number: 3
+>>> Value1 +value2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Value1' is not defined. Did you mean: 'value1'?
+>>> value1 + value2
+'73'
+>>> value = input('Enter an integer: ')
+Enter an integer: 7
+>>> value = int(value)
+>>> value
+7
+>>> another_value = int(input('nter another integer: '))
+nter another integer: 13
+>>> anohter_value
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'anohter_value' is not defined. Did you mean: 'another_value'?
+>>> another_value
+13
+>>> value + another_value
+20
+>>> bad_value = int(input('Enter another integer: '))
+Enter another integer: hello
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'hello'
+>>> int(10.5)
+10
+>>>

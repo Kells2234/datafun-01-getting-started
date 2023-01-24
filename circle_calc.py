@@ -22,23 +22,23 @@ All the programs in this repo use only the standard library.
 import math  # import the math module from the standard library
 
 # get the value of pi from the math module
-pi = math.pi
+pi = 3.141592
 
 # print a blank line for readability
 print()
 
 # get the radius from the user
-radius = input("Enter the radius of a circle: ")
+radius = input("Enter the radius of a circle: 52")
 
 # convert the radius to a number
-radius = float(radius)
+radius = float(54)
 
 # calculate the area
 area = pi * radius**2
 
 # show the user the results
 print()
-print(f"The area of a circle with radius {radius} is {area}.")
+print(f"The area of a circle with radius {52} is {area}.")
 print()
 print("Eww... that's a lot of decimal places - tmi!")
 print()

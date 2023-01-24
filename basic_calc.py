@@ -52,3 +52,11 @@ print()
 print("Add logic to calculate the area of a rectangular plot of land.")
 print("Display the results to the user.")
 
+print()
+print(f"Given length={rectangle_length} and height={rectangle_height},")
+print(f"the area of a rectangle is {rectangle_area}")
+rectangle_length = 75
+rectangle_height = 45
+rectangle_area = rectangle_length * rectangle_height
+
+
